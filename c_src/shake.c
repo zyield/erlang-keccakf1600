@@ -263,7 +263,7 @@ void sponge_hash (
 	
 #define DEFSHA3(n) \
 	const struct kparams_s SHA3_##n##_params_s = \
-		{ 0, FLAG_ABSORBING, 200-n/4, 0, 0x06, 0x80, n/8, 0 };
+		{ 0, FLAG_ABSORBING, 200-n/4, 0, 0x01, 0x80, n/8, 0 };
 
 size_t sponge_default_output_bytes (
 	const keccak_sponge_t s
